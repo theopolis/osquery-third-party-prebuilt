@@ -1,0 +1,9 @@
+prefix=/vagrant/third-party-prebuilt/macos-x86_64
+libdir=/vagrant/third-party-prebuilt/macos-x86_64/lib
+includedir=/vagrant/third-party-prebuilt/macos-x86_64/include
+
+Name: librdkafka-static
+Description: The Apache Kafka C/C++ library (static)
+Version: 1.0.1
+Cflags: -I${includedir}
+Libs: -L${libdir} ${libdir}/librdkafka.a -lm -lzstd /vagrant/third-party-prebuilt/macos-x86_64/lib/libssl.a /vagrant/third-party-prebuilt/macos-x86_64/lib/libcrypto.a -lz -ldl -lpthread -lcrypto

@@ -9,5 +9,5 @@ Version: 2.9.7
 Description: libXML library version2.
 Requires:
 Libs: -L${libdir} -lxml2
-Libs.private:   -L/vagrant/third-party-prebuilt/linux-x86_64/lib -lz   -lm  
+Libs.private:   -L/opt/build-anywhere/x86_64-anywhere-linux-gnu/x86_64-anywhere-linux-gnu/sysroot/usr/lib -lz   -lm  
 Cflags: -I${includedir}/libxml2 

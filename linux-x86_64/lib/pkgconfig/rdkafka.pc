@@ -7,4 +7,4 @@ Description: The Apache Kafka C/C++ library
 Version: 1.0.1
 Cflags: -I${includedir}
 Libs: -L${libdir} -lrdkafka
-Libs.private: -lm -Wl,-Bstatic -lssl -Wl,-Bdynamic -Wl,-Bstatic -lcrypto -Wl,-Bdynamic -Wl,-Bstatic -lz -Wl,-Bdynamic -ldl -lpthread -lrt -lcrypto
+Libs.private: -lm -Wl,-Bstatic -lzstd -Wl,-Bdynamic -Wl,-Bstatic -lssl -Wl,-Bdynamic -Wl,-Bstatic -lcrypto -Wl,-Bdynamic -Wl,-Bstatic -lz -Wl,-Bdynamic -ldl -lpthread -lrt -lcrypto
