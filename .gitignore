@@ -1,21 +1,26 @@
 # these are pre-built dependencies
 linux-x86_64/*
 linux-x86_64/bin
-linux-x86_64/share
+!linux-x86_64/share/
+linux-x86_64/share/*
 !linux-x86_64/lib/
 linux-x86_64/lib/*
 !linux-x86_64/lib/*.a
 !linux-x86_64/lib/pkgconfig
 !linux-x86_64/include
+!linux-x86_64/share/augeas
+
 
 macos-x86_64/*
 macos-x86_64/bin
-macos-x86_64/share
+!macos-x86_64/share/
+macos-x86_64/share/*
 !macos-x86_64/lib/
 macos-x86_64/lib/*
 !macos-x86_64/lib/*.a
 !macos-x86_64/lib/pkgconfig
 !macos-x86_64/include
+!macos-x86_64/share/augeas
 
 windows-x86_64/*
 windows-x86_64/bin
